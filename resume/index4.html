@@ -7,6 +7,26 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
    </head>
    <body class="lg:bg-gray-800 font-sans leading-normal tracking-normal text-gray-900 lg:ml-40 lg:mr-15 lg:mt-10 lg:mb-10 object-cover sm:bg-gray-300 mt-14">
+       <!-- Navigation Bar -->
+  <div class="navbar" id="myNavbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+  </div>
+
+  <!-- JavaScript to toggle the menu -->
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
     <div class="shadow-2xl lg:grid grid-cols-2 max-w-3xl mx-auto p-6 bg-gray-400 rounded-md mt-10 mb-10 font-semibold sm:mx-20">
        <div class="pr-4 sm:bg-red-200 rounded-md shadow-2xl pl-3 pt-4 pb-4 md:bg-sky-600">
         <div class="sm:px-32">
