@@ -1,6 +1,6 @@
 body{
     background-color: bisque;
-    color: rgb(40, 44, 44);
+    color: rgba(10, 44, 44, 0.4);
     font-size: medium;
     margin-left: 20%;
     margin-right: 20%;
@@ -62,7 +62,7 @@ img{
 }
 
     .navbar {
-      background-color: #333;
+      background-color: #10CCF4;
       overflow: hidden;
     }
 
